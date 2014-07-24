@@ -4,10 +4,10 @@
     id        = "org.nyscmobile.admin"
     version   = "1.0.0">
 
-<name>NYSC Mobile App</name>
+<name>NYSC</name>
 
 <description>
-The Official NYSC Mobile App....Putting the National Youth Service Corps (NYSC) in the pockets of Corps members.
+The Official NYSC Mobile App...The National Youth Service Corps (NYSC) is finally in the pockets of Corps members.
 </description>
 
 
@@ -17,7 +17,7 @@ M.D.Tiamiyu (08097870000)
 </author>
 
 <!-- Define app icon for each platform. -->
-<icon src="icon.png" gap:role="default"  width="100" height="100"/> 
+<icon src="icon.png" gap:role="default" /> 
 
 <!-- Define app splash screen for each platform. -->
 <gap:splash src="splash.png" />
