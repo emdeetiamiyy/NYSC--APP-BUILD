@@ -42,11 +42,11 @@
                
              <div id="form">
                                                    
-             <div data-role="content">
+       <div data-role="content">
    
-  	
-      <label for="state" class="select"> <b style="color:#156E19">State of Deployment</b> </label>
-		<select required="required" name="location"  id="location" data-theme="e" >
+  	<form action = "/html/tags/html_form_tag_action.cfm" method = "get">
+     <label for="location" class="select"> <b style="color:#156E19">State of Deployment</b> * </label>
+		<select autofocus = "autofocus" required="required" name="location"  id="location" data-theme="e" >
         	<option value="" >Select State </option>
              <option value="38" > ABIA (AB)</option>
             <option value="2"> ADAMAWA (AD) </option>
@@ -86,23 +86,24 @@
             <option value="36"> YOBE (YB)</option>
             <option value="37"> ZAMFARA (ZM)</option>
         </select>
-    <label for="email"><b style="color:#156E19">State Code Number:</b></label>
-    <input type="text" data-clear-btn="true" name="stateCode" id="stateCode" required value="" placeholder="e.g. FCT/12A/0001">
-    <label for="tel"><b style="color:#156E19">Phone Number:</b></label>
-    <input type="tel" data-clear-btn="true" name="phoneNumber" id="phoneNumber"required value="" placeholder="Phone Number">    
-     <label for="type"><b style="color:#156E19">Subject:</b></label>
-     <select required name="messageType" id="messageType" data-theme="e">
+    <label for="stateCode"><b style="color:#156E19">State Code Number:</b> * </label>
+    <input autofocus="autofocus" required="required" type="text" data-clear-btn="true" name="stateCode" id="stateCode"  value="" placeholder="e.g. FCT/12A/0001" pattern = "^\D{0,15}\/\D{0,15}\/\D{0,15}\$" maxlength="11">
+    <label for="phoneNumber"><b style="color:#156E19">Phone Number:</b> * </label>
+    <input autofocus="autofocus" required="required" type="tel" data-clear-btn="true" name="phoneNumber" maxlength="11" id="phoneNumber" value="" placeholder="Phone Number">    
+     <label for="messageType"><b style="color:#156E19">Subject:</b> *</label>
+     <select autofocus="autofocus" required="required" name="messageType" id="messageType" data-theme="e">
        <option value="">Select Type </option>
         <option value="FIN">Financial</option>
         <option value="MED">Health</option>
         <option value="SEC">Security</option>
         <option value="OTH">Others</option>
     </select>
-     <label for="textarea"><b style="color:#156E19">Message:</b></label>
+     <label for="comment"><b style="color:#156E19">Message:</b></label>
      <textarea cols="40" rows="8" name="comment" id="comment"required maxlength="100" placeholder="Enter your complain"></textarea>
      <input type="button" value="Submit" data-theme="e" name="" onClick="sendDistress();" >
      <input type="reset" value="Reset"   data-theme="e" name="reset" >
      
+     </form>
   </div>              
                                                               
        
