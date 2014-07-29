@@ -21,9 +21,9 @@
 			
 			var output =  '<div data-role="listview" data-filter="true" >';
 			for(var obj in data){
-				output +='<div data-role="collapsible"><h3>'+ data[obj].title+'</h3>';
-				output+='<div><ul><li>'+ data[obj].title +'</li><br>';
-				output += ' '+data[obj].description + '</li>';
+		output +='<div data-role="collapsible" data-theme="e"><h3 style="color:#156E19">'+ data[obj].title+'</h3>';
+		output+='<div><ul><li><b style="color:#156E19">'+ data[obj].title +'</b></li><br>';
+		output += ' '+data[obj].description + '</li>';
 				
 				output +='</ul></div></div>';
 		}
