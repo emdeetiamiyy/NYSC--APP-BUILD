@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="images/add-to-home/touch-icon-iphone.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="images/add-to-home/touch-icon-ipad.png" />
         <link rel="apple-touch-icon" sizes="114x114" href="images/add-to-home/touch-icon-iphone4.png" />
+  
         <script type="text/javascript" src="javascript.js"></script>
         <script type="text/javascript" src="js/add2home.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
@@ -19,6 +20,7 @@
         <script src="js/jquery.mobile-1.3.2.min.js"></script>
         <!-- Glyphicons -->
         <script type="text/javascript" async src="js/glyphicons/ga.js"></script>
+ 
     </head>
     <body>
         <!-- Page Contents Starts
@@ -44,7 +46,7 @@
                                                    
        <div data-role="content">
    
-  	<form action = "/html/tags/html_form_tag_action.cfm" method = "get">
+ <form name="distress" action="distress.html" method="post">
      <label for="location" class="select"> <b style="color:#156E19">State of Deployment</b> * </label>
 		<select autofocus = "autofocus" required="required" name="location"  id="location" data-theme="e" >
         	<option value="" >Select State </option>
@@ -87,11 +89,11 @@
             <option value="37"> ZAMFARA (ZM)</option>
         </select>
     <label for="stateCode"><b style="color:#156E19">State Code Number:</b> * </label>
-    <input autofocus="autofocus" required="required" type="text" data-clear-btn="true" name="stateCode" id="stateCode"  value="" placeholder="e.g. FCT/12A/0001" pattern = "^\D{0,15}\/\D{0,15}\/\D{0,15}\$" maxlength="11">
+    <input autofocus required type="text" data-clear-btn="true" name="stateCode" id="stateCode"  value="" placeholder="e.g. FC/12A/0001" pattern = "^$" maxlength="11">
     <label for="phoneNumber"><b style="color:#156E19">Phone Number:</b> * </label>
-    <input autofocus="autofocus" required="required" type="tel" data-clear-btn="true" name="phoneNumber" maxlength="11" id="phoneNumber" value="" placeholder="Phone Number">    
+    <input autofocus required type="tel" data-clear-btn="true" name="phoneNumber" maxlength="11" id="phoneNumber" value="" placeholder="Phone Number">    
      <label for="messageType"><b style="color:#156E19">Subject:</b> *</label>
-     <select autofocus="autofocus" required="required" name="messageType" id="messageType" data-theme="e">
+     <select autofocus required="required" name="messageType" id="messageType" data-theme="e">
        <option value="">Select Type </option>
         <option value="FIN">Financial</option>
         <option value="MED">Health</option>
@@ -104,6 +106,7 @@
      <input type="reset" value="Reset"   data-theme="e" name="reset" >
      
      </form>
+     <div> <h1 style="text-align:center"><b style="color:#F00">WARNING!!!</b></h1><b style="color:#156E19">There is <b style="color:#F00"> SERIOUS PENALTY</b> for reporting <b style="color:#F00">FALSE DISTRESS</b> to the NYSC. This tool is meant for <b style="color:#F00">SERVING </b> corps members <b style="color:#F00"> ONLY</b>.</b></div>
   </div>              
                                                               
        
@@ -134,6 +137,10 @@
                         <li>
                             <a href="home.html" rel="external" class="activated"><i class="fa fa-home fa-2x"></i>HOME</a>
                         </li>
+     <li> <a href="news.html" rel="external"><i class="fa fa-bullhorn fa-2x"></i>NYSC NEWS</a>                   </li>
+             <li><a href="dgs.html" rel="external"><i class="fa fa-thumbs-up fa-2x"></i>MEET OUR DGs</a></li>                        					
+             <li><a href="bye_laws.html" rel="external"><i class="fa fa-legal (alias) fa-2x"></i>BYE-LAWS</a></li>		
+			                  
                         <li>
                         <a href="#"><i class="fa fa-location-arrow fa-2x"></i>LOCATE NYSC</a>
                             <ul class="sub-items">
@@ -148,15 +155,11 @@
                              </li>                                                             
                             </ul>
                         </li>
-                        <li><a href="dgs.html" rel="external"><i class="fa fa-thumbs-up fa-2x"></i>MEET OUR DGs</a></li>                        					
-						
-						<li><a href="security.html" rel="external"><i class="fa fa-road fa-2x"></i>SECURITY TIPS</a></li> 
-                        <li><a href="bye_laws.html" rel="external"><i class="fa fa-legal (alias) fa-2x"></i>BYE-LAWS</a></li>
-                     <li><a href="act.html" rel="external"><i class="fa fa-book fa-2x"></i>NYSC DECREE</a></li>
-                        <li><a href="health.html" rel="external"><i class="fa fa-ambulance fa-2x"></i>HEALTH TIPS</a></li>	
-						<li><a href="cds.html" rel="external"><i class="fa fa-heart fa-2x"></i>CDS</a></li>						
-                        <li><a href="faqs.html" rel="external"><i class="fa fa-lightbulb-o fa-2x"></i>FAQS</a></li>
-                        <li>
+  <li><a href="faqs.html" rel="external"><i class="fa fa-lightbulb-o fa-2x"></i>FAQS</a></li>                
+   <li>
+   <a href="security.html" rel="external"><i class="fa fa-road fa-2x"></i>SECURITY TIPS</a></li>       <li><a href="health.html" rel="external"><i class="fa fa-ambulance fa-2x"></i>HEALTH TIPS</a></li>	     
+                     <li><a href="act.html" rel="external"><i class="fa fa-book fa-2x"></i>NYSC DECREE</a></li>        
+                      <li>
                             <a href="#"><i class="fa fa-info fa-2x"></i>ABOUT</a>
                             <ul class="sub-items">
                                 <li>

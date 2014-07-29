@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>NYSC Mobile Application</title>
+        <title>NYSC MOBILE APPLICATION</title>
         <!-- All Stylesheets -->
         <link rel="stylesheet"  href="css/All-Stylesheets.css">
         <!-- Add 2 Home -->
-     <link rel="apple-touch-icon" href="images/add-to-home/touch-icon-iphone.png" />
-     <link rel="apple-touch-icon" sizes="72x72" href="images/add-to-home/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" href="images/add-to-home/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/add-to-home/touch-icon-ipad.png" />
         <link rel="apple-touch-icon" sizes="114x114" href="images/add-to-home/touch-icon-iphone4.png" />
         <script type="text/javascript" src="js/add2home.js" charset="utf-8"></script>
         <!-- Javascript File -->
@@ -20,69 +20,44 @@
         <script src="js/jquery.mobile-1.3.2.min.js"></script>
         <!-- Glyphicons -->
         <script type="text/javascript" async src="js/glyphicons/ga.js"></script>
-    </head>
-    <body>
-        <!-- Page Contents Starts
+		
+
+	<script src="js/myscript.js"></script>
+	
+	
+</head>
+<body>
+	 <!-- Page Contents Starts
             ================================================== -->
         <div data-role="page" id="page" data-theme="">
             <!-- header Starts -->
             <div data-role="header" data-theme="g" class="header">
                 <h1><a href="index.html" rel="external">NYSC APP</a></h1>
-                <a href="#left-panel" data-shadow="false" ><i class="fa fa-indent fa-2x"></i></a>
-                <a href="#right-panel" data-shadow="false" ><i class="fa fa-bars fa-2x"></i></a>
+              <a href="#left-panel" data-shadow="false" ><i class="fa fa-indent fa-2x"></i></a>
+              <a href="#right-panel" data-shadow="false" ><i class="fa fa-bars fa-2x"></i></a>
             </div>
-            <!-- header Ends -->
-            <div data-role="content">
-                <!-- Slider Starts -->                
-                <!-- Slider Ends -->
-                <div>
-                <h1 class="icon-heading">ABOUT <b>APP</b></h1>
-                <p>                
-                 The information, images, and/or data contained in this application is
-copyrighted and solely belongs to the <b style="color:#156E19"> National Youth Service Corps (NYSC) </b> and may not be distributed, modified, reproduced in whole
-or in part without the prior, handwritten and signed consent
-of the <br/> <b style="color:#F00"> Director General</b> of the  <b style="color:#156E19"> National Youth Service Corps (NYSC).</b>
-                </p>                                
-   			</div> <!-- End of About NYSC -->
+           
+            
+		
+		
+        
+        <div data-role="content">
+                <!-- Security Tips Starts -->
+             <h1 class="icon-heading"> NYSC <b>NEWS  </b></h1>
+<a href="#news" data-transition="none" data-role="button"data-icon="arrow-r" data-theme="e" style="color:#156E19">REFRESH NEWS</a>
 
-                              
-               
 
-                 <hr>
-                 
-                              
-       <div>
-       <h1 class="icon-heading">APP <b>ENQUIRIES</b></h1>
-     <div class="form">
-		<form method='post' action='process.php' name='ContactForm' id='ContactForm'>							
-		<input type="text" name="name" class="text" placeholder="Name *" style="width:100%"/>							
-	<input type="text" name="email" class="text"  placeholder="Email *" style="width:100%"/>
-	<input type="text" name="title" class="text"  placeholder="Title" style="width:100%"/>
-      <textarea name="comment" class="text textarea" placeholder="Comment *" style="width:100%; height:100px;"></textarea>							
-     <input type="submit" value="Submit" data-theme="e" name='submitf' id="submitf"/>
-              <input type='reset' value='Reset'  data-theme="e" name="reset">
-	</form>
-		</div>                            
-     <p>All enquiries, suggestions and correspondence should be forwarded to <br>
-     <b > <a href="mailto:mobileapp@nysc.gov.ng" target="_blank" style="color:#156E19"> mobileapp@nysc.gov.ng</a> </b>
-   </p>
-                    
-                    
-                </div>
-                <!-- Our Team Ends -->
-				<hr>
-                <!-- Our Skills Starts -->
-                
-   
-                    
-                
-                <!-- Our Skills Ends -->                       
-                <!-- Footer Starts -->
-                <div class="footer">© NYSC 2014. All Rights Reserved.</div>
-                <!-- Footer Ends -->
-            </div>
-            <!-- /content -->
-            <!-- Left Panel Starts
+
+
+
+
+        <div class="footer" data-position="fixed" data-theme="e">
+		<p style="text-align:center; color:#FFF">© NYSC 2014. All Rights Reserved.</p>
+		</div>
+        
+		</div>
+        
+           <!-- Left Panel Starts
                 ================================================== -->
             <div data-role="panel" id="left-panel" data-theme="b">
                 <!-- Social Icons Starts -->
@@ -105,8 +80,8 @@ of the <br/> <b style="color:#F00"> Director General</b> of the  <b style="color
              <li><a href="dgs.html" rel="external"><i class="fa fa-thumbs-up fa-2x"></i>MEET OUR DGs</a></li>                        					
              <li><a href="bye_laws.html" rel="external"><i class="fa fa-legal (alias) fa-2x"></i>BYE-LAWS</a></li>		
 			                  
-                        <li>
-                        <a href="#"><i class="fa fa-location-arrow fa-2x"></i>LOCATE NYSC</a>
+              <li>
+                <a href="#"><i class="fa fa-location-arrow fa-2x"></i>LOCATE NYSC</a>
                             <ul class="sub-items">
 							 <li>
                <a href="ndhq.html" rel="external"><b> NYSC HEADQUATRES </b> </a>
@@ -166,13 +141,45 @@ of the <br/> <b style="color:#F00"> Director General</b> of the  <b style="color
             </div>
             <!-- Right Panel Ends
                 ================================================== -->
-            <!-- ToTop Starts
-                ================================================== -->  
-            <a href="#" class="scrollup">Scroll</a>      
-            <!-- ToTop Ends
-                ================================================== --> 
-        </div>
-        <!-- Page Contents Ends
+        
+        
+	</div>
+
+
+
+
+
+		<div id="news" data-role="page" data-theme="">		
+		<div data-role="header" data-theme="e" >
+		<h1 style="color:"><b> NYSC NEWS UPDATE</b></h1>
+	 <a href="home.html" data-transition="none" data-icon="home" data-iconpos="notext"></a>
+
+         
+		</div>
+		
+		
+		
+		<!-- contents starts -->
+		
+			
+			<div data-role="content">
+			<div data-role="collapsible-set">
+			
+			<div id="newsContent">
+			
+				
+			</div>	
+			<script type="text/javascript">getNews();</script>
+				</div>
+				</div>
+				
+				<div class="footer" data-position="fixed" data-theme="e">
+		<p style="text-align:center; color:#FFF">© NYSC 2014. All Rights Reserved.</p>
+		</div>
+				
+				</div>
+			
+	<!-- Page Contents Ends
             ================================================== -->
         <!-- Javascript Files
             ================================================== -->   
@@ -180,28 +187,12 @@ of the <br/> <b style="color:#F00"> Director General</b> of the  <b style="color
         <!-- Custom JS File -->
         <script src="js/custom.js"></script> 
         <script src="menu/js/main.js"></script>    
-        <!-- Twitter -->
-        <script src="js/tweets/twitlive-min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/tweets/livetweets.css">
-        <script>
-            $(document).ready(function() {
-            	$(".customizeWindow").click(function() {
-            		$(".customizeMe").css("display", "block");
-            	});
-            	
-            	$("#close").click(function() {
-            		$(".customizeMe").css("display", "none");
-            	});
-            	
-            	$("#custSearch").click(function() {
-            		$(".customizeMe").css("display", "none");
-            		$("#tweet_container h1 em").html($("#keyword").val());
-            	});
-            	
-            	$(".tweets").liveTweets({operator: "#google", liveTweetsToken: "R8l0mjc5sbfmSB1fRdKB15T19mGfI8mpnnfvWipmo"});
-            });
-        </script>
-        <!-- Retina Display -->
-        <script src="js/Retina/retina.js"></script>
-    </body>
+        
+         <!-- Retina Display -->
+        <script src="js/Retina/retina.js"></script>		
+				
+				
+		
+		
+</body>
 </html>
