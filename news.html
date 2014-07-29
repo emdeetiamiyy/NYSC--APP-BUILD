@@ -22,7 +22,7 @@
         <script type="text/javascript" async src="js/glyphicons/ga.js"></script>
 		
 
-	<script src="js/myscript.js"></script>
+	         <script type="text/javascript" src="myscript.js"></script>
 	
 	
 </head>
@@ -46,12 +46,7 @@
              <h1 class="icon-heading"> NYSC <b>NEWS  </b></h1>
 <a href="#news" data-transition="none" data-role="button"data-icon="arrow-r" data-theme="e" style="color:#156E19">REFRESH NEWS</a>
 
-
-
-
-
-
-        <div class="footer" data-position="fixed" data-theme="e">
+     <div class="footer" data-position="fixed" data-theme="e">
 		<p style="text-align:center; color:#FFF">© NYSC 2014. All Rights Reserved.</p>
 		</div>
         
@@ -76,7 +71,6 @@
                         <li>
                             <a href="home.html" rel="external" class="activated"><i class="fa fa-home fa-2x"></i>HOME</a>
                         </li>
-     <li> <a href="news.html" rel="external"><i class="fa fa-bullhorn fa-2x"></i>NYSC NEWS</a>                   </li>
              <li><a href="dgs.html" rel="external"><i class="fa fa-thumbs-up fa-2x"></i>MEET OUR DGs</a></li>                        					
              <li><a href="bye_laws.html" rel="external"><i class="fa fa-legal (alias) fa-2x"></i>BYE-LAWS</a></li>		
 			                  
@@ -97,7 +91,6 @@
   <li><a href="faqs.html" rel="external"><i class="fa fa-lightbulb-o fa-2x"></i>FAQS</a></li>                
    <li>
    <a href="security.html" rel="external"><i class="fa fa-road fa-2x"></i>SECURITY TIPS</a></li>       <li><a href="health.html" rel="external"><i class="fa fa-ambulance fa-2x"></i>HEALTH TIPS</a></li>	     
-                     <li><a href="act.html" rel="external"><i class="fa fa-book fa-2x"></i>NYSC DECREE</a></li>        
                       <li>
                             <a href="#"><i class="fa fa-info fa-2x"></i>ABOUT</a>
                             <ul class="sub-items">
@@ -151,24 +144,15 @@
 
 		<div id="news" data-role="page" data-theme="">		
 		<div data-role="header" data-theme="e" >
-		<h1 style="color:"><b> NYSC NEWS UPDATE</b></h1>
+		<h1 style="color:#156E19"><b> NYSC NEWS UPDATE</b></h1>
 	 <a href="home.html" data-transition="none" data-icon="home" data-iconpos="notext"></a>
-
-         
 		</div>
+			<!-- contents starts -->
 		
-		
-		
-		<!-- contents starts -->
-		
-			
 			<div data-role="content">
 			<div data-role="collapsible-set">
 			
-			<div id="newsContent">
-			
-				
-			</div>	
+			<div id="newsContent"> </div>	
 			<script type="text/javascript">getNews();</script>
 				</div>
 				</div>
@@ -187,6 +171,38 @@
         <!-- Custom JS File -->
         <script src="js/custom.js"></script> 
         <script src="menu/js/main.js"></script>    
+        
+         <script>window.jQuery || document.write('<script src="flexslider/js/libs/jquery-1.7.min.js">\x3C/script>')</script> 
+        <!-- FlexSlider --> 
+        <script defer src="flexslider/jquery.flexslider.js"></script> 
+        <script type="text/javascript">
+            $(function(){
+              SyntaxHighlighter.all();
+            });
+            $(window).load(function(){
+              $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 108,
+                itemMargin: 0,
+                asNavFor: '#slider'
+              });
+            
+              $('#slider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                sync: "#carousel",
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+              });
+            });
+        </script> 
+        
         
          <!-- Retina Display -->
         <script src="js/Retina/retina.js"></script>		

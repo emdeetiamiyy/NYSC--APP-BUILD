@@ -35,5 +35,6 @@
 		
 		}
 	hr.send(null);
-	result.innerHTML = "MAKE SURE YOU CONNECT TO THE INTERNET AND THEN REFRESH THIS PAGE"
+	var res = "MAKE SURE YOU CONNECT TO THE INTERNET AND THEN REFRESH THIS PAGE";
+	result.innerHTML = res.fontcolor("#156E19");
 	}
