@@ -1,5 +1,5 @@
 <?php
-$adminemail = "youremailhere@googlemail.com";
+$adminemail = "mobileapp@nysc.gov.ng";
 
 if ($_GET['send'] == 'comments')
 {
@@ -7,7 +7,7 @@ if ($_GET['send'] == 'comments')
 	$_uname = $_POST['name'];
 	$_uemail = $_POST['email'];
 
-	$_website	=	$_POST['website'];
+	$_title	=	$_POST['title'];
 	$_comments	=	stripslashes($_POST['comment']);
 						
 	$email_check = '';
@@ -25,7 +25,7 @@ if ($_GET['send'] == 'comments')
 	$from = $_uemail;
 	$subject = "New Contact Us Message: " .$_uname;
 	
-	$message =  'Name: &nbsp;&nbsp;' . $_uname . '<br><br>' . $_uemail . '<br><br> Website: &nbsp;&nbsp;' . $_website .  '<br><br> Comment:&nbsp;&nbsp;' . $_comments;	
+	$message =  'Name: &nbsp;&nbsp;' . $_uname . '<br><br>' . $_uemail . '<br><br> title: &nbsp;&nbsp;' . $_title .  '<br><br> Comment:&nbsp;&nbsp;' . $_comments;	
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
@@ -33,6 +33,8 @@ if ($_GET['send'] == 'comments')
 	$headers .= "From: " . $from . "\r\n";
 
 	@mail($to, $subject, $message, $headers);	
+	
+	echo "Your submission was delivered successfully ";
 	
 	} else {
    
