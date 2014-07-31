@@ -18,25 +18,25 @@ function sendDistress()
     }
 	else{
  //Validate state code and state selected
- if(    (loc=="38" && cc=="AB") || (loc=="2" && cc=="AD") || 
-		(loc=="3" && cc=="AK") || (loc=="4" && cc=="AN") ||
-		(loc=="5" && cc=="BA") || (loc=="6" && cc=="BY") ||
-		(loc=="7" && cc=="BN") || (loc=="8" && cc=="BO") ||
-		(loc=="9" && cc=="CR") || (loc=="10" && cc=="DT") ||
-		(loc=="11" && cc=="EB") || (loc=="12" && cc=="ED") ||
-		(loc=="13" && cc=="EK") || (loc=="14" && cc=="EN") ||
-		(loc=="15" && cc=="FC") || (loc=="16" && cc=="GM") ||
-		(loc=="17" && cc=="IM") || (loc=="18" && cc=="JG") ||
-		(loc=="19" && cc=="KD") || (loc=="20" && cc=="KN") ||
-		(loc=="21" && cc=="KT") || (loc=="22" && cc=="KB") ||
-		(loc=="23" && cc=="KG") || (loc=="24" && cc=="KW") ||
-		(loc=="25" && cc=="LA") || (loc=="26" && cc=="NS") ||
-		(loc=="27" && cc=="NG") || (loc=="28" && cc=="OG") ||
-		(loc=="29" && cc=="OD") || (loc=="30" && cc=="OS") ||
-		(loc=="31" && cc=="OY") || (loc=="32" && cc=="PL") ||
-		(loc=="33" && cc=="RV") || (loc=="34" && cc=="SO") ||
-		(loc=="35" && cc=="TR") || (loc=="36" && cc=="YB") ||
-		(loc=="37" && cc=="ZM") 	)
+ if(    (loc=="Abia" && cc=="AB") || (loc=="Adamawa" && cc=="AD") || 
+		(loc=="Akwaibom" && cc=="AK") || (loc=="Anambra" && cc=="AN") ||
+		(loc=="Bauchi" && cc=="BA") || (loc=="Bayelsa" && cc=="BY") ||
+		(loc=="Benue" && cc=="BN") || (loc=="Borno" && cc=="BO") ||
+		(loc=="Crossriver" && cc=="CR") || (loc=="Delta" && cc=="DT") ||
+		(loc=="Ebonyi" && cc=="EB") || (loc=="Edo" && cc=="ED") ||
+		(loc=="Ekiti" && cc=="EK") || (loc=="Enugu" && cc=="EN") ||
+		(loc=="Abuja" && cc=="FC") || (loc=="Gombe" && cc=="GM") ||
+		(loc=="Imo" && cc=="IM") || (loc=="Jigawa" && cc=="JG") ||
+		(loc=="Kaduna" && cc=="KD") || (loc=="Kano" && cc=="KN") ||
+		(loc=="Katsina" && cc=="KT") || (loc=="Kebbi" && cc=="KB") ||
+		(loc=="Kogi" && cc=="KG") || (loc=="Kwara" && cc=="KW") ||
+		(loc=="Lagos" && cc=="LA") || (loc=="Nasarawa" && cc=="NS") ||
+		(loc=="Niger" && cc=="NG") || (loc=="Ogun" && cc=="OG") ||
+		(loc=="Ondo" && cc=="OD") || (loc=="Osun" && cc=="OS") ||
+		(loc=="Oyo" && cc=="OY") || (loc=="Plateau" && cc=="PL") ||
+		(loc=="Rivers" && cc=="RV") || (loc=="Sokoto" && cc=="SO") ||
+		(loc=="Taraba" && cc=="TR") || (loc=="Yobe" && cc=="YB") ||
+		(loc=="Zamfara" && cc=="ZM") 	)
 		{
  //Validate Batch of Service
  if(batch=="A" || batch=="B" || batch=="C"  )
@@ -97,7 +97,7 @@ var location = document.getElementById('location').value;
 var messageType = document.getElementById('messageType').value;
 
 xmlhttp.open("GET","http://www.admin.nyscmobile.org/login/getDistress.php?stateCode="+stateCode+"&phoneNumber="+phoneNumber+"&message="+comment
-    +"&messageType="+messageType, true);
+    +"&messageType="+messageType+"&location="+location, true);
 //alert(stateCode);
 //alert('okk');
 xmlhttp.send();

@@ -50,48 +50,48 @@
      <label for="location" class="select"> <b style="color:#156E19">State of Deployment</b> * </label>
 		<select autofocus = "autofocus" required="required" name="location"  id="location" data-theme="e" >
         	<option value="" >Select State </option>
-             <option value="38" > ABIA (AB)</option>
-            <option value="2"> ADAMAWA (AD) </option>
-            <option value="3"> AKWA IBOM (AK) </option>
-            <option value="4"> ANAMBRA (AN) </option>
-            <option value="5"> BAUCHI (BA) </option>
-            <option value="6"> BAYELSA (BY) </option>
-            <option value="7"> BENUE (BN) </option>
-            <option value="8"> BORNO (BO)</option>
-            <option value="9"> CROSS RIVER (CR) </option>
-            <option value="10"> DELTA (DT) </option>
-            <option value="11"> EBONYI (EB) </option>
-            <option value="12"> EDO (ED) </option>
-            <option value="13"> EKITI (EK) </option>
-            <option value="14"> ENUGU (EN)</option>
-            <option value="15"> FCT (ABUJA) (FC)</option>
-            <option value="16"> GOMBE (GM)</option>
-            <option value="17"> IMO (IM)</option>
-            <option value="18"> JIGAWA (JG)</option>
-            <option value="19"> KADUNA (KD)</option>
-            <option value="20"> KANO (KN)</option>
-            <option value="21"> KATSINA (KT)</option>
-            <option value="22"> KEBBI (KB)</option>
-            <option value="23"> KOGI (KG)</option>
-            <option value="24"> KWARA (KW)</option>
-            <option value="25"> LAGOS (LA)</option>
-            <option value="26"> NASSARAWA (NS)</option>
-            <option value="27"> NIGER (NG)</option>
-            <option value="28"> OGUN (OG)</option>
-            <option value="29"> ONDO (OD)</option>
-            <option value="30"> OSUN (OS)</option>
-            <option value="31"> OYO (OY)</option>
-            <option value="32"> PLATEAU (PL)</option>
-            <option value="33"> RIVERS (RV)</option>
-            <option value="34"> SOKOTO (SO)</option>
-            <option value="35"> TARABA (TR)</option>
-            <option value="36"> YOBE (YB)</option>
-            <option value="37"> ZAMFARA (ZM)</option>
+             <option value="Abia" > ABIA (AB)</option>
+            <option value="Adamawa"> ADAMAWA (AD) </option>
+            <option value="Akwaibom"> AKWA IBOM (AK) </option>
+            <option value="Anambra"> ANAMBRA (AN) </option>
+            <option value="Bauchi"> BAUCHI (BA) </option>
+            <option value="Bayelsa"> BAYELSA (BY) </option>
+            <option value="Benue"> BENUE (BN) </option>
+            <option value="Borno"> BORNO (BO)</option>
+            <option value="Crossriver"> CROSS RIVER (CR) </option>
+            <option value="Delta"> DELTA (DT) </option>
+            <option value="Ebonyi"> EBONYI (EB) </option>
+            <option value="Edo"> EDO (ED) </option>
+            <option value="Ekiti"> EKITI (EK) </option>
+            <option value="Enugu"> ENUGU (EN)</option>
+            <option value="Abuja"> FCT (ABUJA) (FC)</option>
+            <option value="Gombe"> GOMBE (GM)</option>
+            <option value="Imo"> IMO (IM)</option>
+            <option value="Jigawa"> JIGAWA (JG)</option>
+            <option value="Kaduna"> KADUNA (KD)</option>
+            <option value="Kano"> KANO (KN)</option>
+            <option value="Katsina"> KATSINA (KT)</option>
+            <option value="Kebbi"> KEBBI (KB)</option>
+            <option value="Kogi"> KOGI (KG)</option>
+            <option value="Kwara"> KWARA (KW)</option>
+            <option value="Lagos"> LAGOS (LA)</option>
+            <option value="Nasarawa"> NASSARAWA (NS)</option>
+            <option value="Niger"> NIGER (NG)</option>
+            <option value="Ogun"> OGUN (OG)</option>
+            <option value="Ondo"> ONDO (OD)</option>
+            <option value="Osun"> OSUN (OS)</option>
+            <option value="Oyo"> OYO (OY)</option>
+            <option value="Plateau"> PLATEAU (PL)</option>
+            <option value="Rivers"> RIVERS (RV)</option>
+            <option value="Sokoto"> SOKOTO (SO)</option>
+            <option value="Taraba"> TARABA (TR)</option>
+            <option value="Yobe"> YOBE (YB)</option>
+            <option value="Zamfara"> ZAMFARA (ZM)</option>
         </select>
     <label for="stateCode"><b style="color:#156E19">State Code Number:</b> * </label>
-    <input autofocus required type="text" data-clear-btn="true" name="stateCode" id="stateCode"  value="" placeholder="e.g. FC/12A/0001" pattern = "^$" maxlength="11">
+    <input autofocus required type="text" data-clear-btn="true" name="stateCode" id="stateCode"  value="" placeholder="e.g. FC/12A/0001" pattern = "[A-Za-z]{2}[/]{1}[1-6]{2}[A-Ca-c]{1}[/]{1}[0-9]{4}" maxlength="11">
     <label for="phoneNumber"><b style="color:#156E19">Phone Number:</b> * </label>
-    <input autofocus required type="tel" data-clear-btn="true" name="phoneNumber" maxlength="11" id="phoneNumber" value="" placeholder="Phone Number">    
+    <input autofocus required type="tel" data-clear-btn="true" name="phoneNumber" maxlength="11" id="phoneNumber" value="" pattern="[0-9]{11}" placeholder="Phone Number">    
      <label for="messageType"><b style="color:#156E19">Subject:</b> *</label>
      <select autofocus required="required" name="messageType" id="messageType" data-theme="e">
        <option value="">Select Type </option>
