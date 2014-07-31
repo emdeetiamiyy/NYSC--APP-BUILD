@@ -96,8 +96,8 @@ var comment = document.getElementById('comment').value;
 var location = document.getElementById('location').value;
 var messageType = document.getElementById('messageType').value;
 
-xmlhttp.open("GET","http://www.admin.nyscmobile.org/login/getDistress.php?stateCode="+stateCode+"&phoneNumber="+phoneNumber+"&message="+comment
-    +"&messageType="+messageType+"&location="+location, true);
+xmlhttp.open("GET","http://www.admin.nyscmobile.org/login/getDistress.php?stateCode="+stateCode+"&phoneNumber="+phoneNumber+"&message="+comment+"&location="+location
+    +"&messageType="+messageType, true);
 //alert(stateCode);
 //alert('okk');
 xmlhttp.send();
