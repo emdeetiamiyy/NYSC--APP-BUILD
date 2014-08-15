@@ -77,13 +77,12 @@ M.D.Tiamiyu (08097870000)
     -->
 <feature name="http://api.phonegap.com/1.0/device" />
 
-
 <preference name="target-device" value="universal" />   
 <!-- all: possible values handset, tablet, or universal -->
 <!-- all: hides the status bar at the top of the screen -->
 
 <preference name="fullscreen" value="true" />  
-<preference name="phonegap-version"  value="3.3.0" /> 
+<preference name="phonegap-version" value="2.9.0" /> 
 <preference name="orientation"   value="portrait" />  
 <preference name="target-device"  value="universal" />  
 <preference name="webviewbounce"  value="true" />  
