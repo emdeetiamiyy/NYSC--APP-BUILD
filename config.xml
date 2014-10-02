@@ -33,7 +33,7 @@ M.D.Tiamiyu (08097870000)
 <!-- all: hides the status bar at the top of the screen -->
 
 <preference name="fullscreen" value="true" />  
-<preference name="phonegap-version"  value="3.5.0" /> 
+<preference name="phonegap-version"  value="3.5.1" /> 
 <preference name="orientation"   value="portrait" />  
 <preference name="target-device"  value="universal" />  
 <preference name="webviewbounce"  value="true" />  
