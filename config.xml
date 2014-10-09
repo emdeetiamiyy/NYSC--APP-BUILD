@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.1" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "org.nyscmobile.admin"
@@ -33,7 +33,7 @@ M.D.Tiamiyu (08097870000)
 <!-- all: hides the status bar at the top of the screen -->
 
 <preference name="fullscreen" value="true" />  
-<preference name="phonegap-version"  value="3.3.0" /> 
+<preference name="phonegap-version"  value="3.5.1" /> 
 <preference name="orientation"   value="portrait" />  
 <preference name="target-device"  value="universal" />  
 <preference name="webviewbounce"  value="true" />  
